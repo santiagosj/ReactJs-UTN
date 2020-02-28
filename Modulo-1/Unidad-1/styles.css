@@ -1,0 +1,72 @@
+.container{
+    clear: both;
+}
+.slogan{
+    text-align: center;
+}
+#box-1, #box-2{
+    width: 80%;
+    margin: auto;
+}
+#box-1 p{
+  max-width: 500px;
+  margin: auto;
+}
+form{
+    text-align: center;
+}
+.user-inputs{
+    padding: 20px;
+    text-align: center;
+}
+.user-inputs input{
+  border: none;
+  border-bottom: 1px dotted black;
+  padding: 15px;
+  margin: 10px;
+  transition: .2s ease-in-out;
+  text-align: center;
+  letter-spacing: 2px;
+  width: 90%;
+  clear: both;
+}
+ .user-inputs input:focus {
+    transition: .2s ease-in-out;
+    letter-spacing: 3px;
+  }
+
+/*=================================================================*/
+.plan-seguro{
+    max-width: 700px;
+    margin: auto;
+}
+.plan-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+legend{
+    margin: auto;
+}
+.plan{
+    margin: 20px auto;
+    border: 1px solid black;
+    padding: 30px;
+}
+.plan ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .plan ul li:before {
+    content: '✓ ';
+  }
+
+
+@media only screen and (min-width:800px){
+    .user-inputs input{
+        width: 60%;
+      }
+}

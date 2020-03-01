@@ -53,8 +53,20 @@
                                     <li>bla</li>
                                     <li>bla</li>
                                 </ul>
-                               <label for="básico">Básico</label>
-                               <input type="radio" name="plan"> <br/>
+                               <label for="básico">
+                                  <input 
+                                    type="checkbox" 
+                                    name="plan" 
+                                    onclick="checkearUno(this)"
+                                    class="filters-available-size"
+                                    value="Básico"> 
+                                  <span 
+                                    class="checkmark"
+                                    id="basico"> 
+                                      Básico 
+                                    </span>
+                               </label>
+                               <br/>
                              </div>
                               
                              <div class="plan intermedio">
@@ -66,8 +78,21 @@
                                   <li>bla</li>
                                   <li>bla</li>
                               </ul>
-                               <label for="intermedio">Intermedio</label>
-                               <input type="radio" name="plan"> <br/>
+                               <label for="intermedio">
+                                <input 
+                                   type="checkbox" 
+                                   name="plan" 
+                                   onclick="checkearUno(this)"
+                                   class="filters-available-size"
+                                   value="Intermedio">
+                                 <span 
+                                   class="checkmark"
+                                   id="intermedio"   
+                                 >
+                                    Intermedio
+                                 </span>
+                            </label>
+                                <br/>
                              </div>
                               
                              <div class="plan premium"> 
@@ -79,8 +104,22 @@
                                   <li>bla</li>
                                   <li>bla</li>
                               </ul>
-                               <label for="premium">Premium</label>
-                               <input type="radio" name="plan">
+                               <label for="premium">
+                                  <input 
+                                    type="checkbox" 
+                                    name="plan" 
+                                    onclick="checkearUno(this)"
+                                    class="filters-available-size" 
+                                    value="Premium"
+                                  >
+                                  <span 
+                                     class="checkmark" 
+                                     id="premium"
+                                  >
+                                    Premium
+                                 </span>           
+                                </label>
+                              
                              </div>
                         </div>
                            

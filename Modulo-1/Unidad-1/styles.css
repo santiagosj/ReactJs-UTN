@@ -89,6 +89,8 @@ fieldset .plan:hover{
     padding: 0;
   }
 
+/* aplicando un poco de especificidad */
+
   .basico ul li:nth-last-child(-n+3)::before , .intermedio ul li:nth-last-child(-n+2)::before{ 
     content:'✖ ' !important;
     color:red !important;
@@ -98,11 +100,6 @@ fieldset .plan:hover{
     content: '✓ ';
     color:green;
   }
-  
-  /*
-    content:'✖ ';
-    color:red;
-  */
 
 input[type="checkbox" i]{
   cursor: pointer;

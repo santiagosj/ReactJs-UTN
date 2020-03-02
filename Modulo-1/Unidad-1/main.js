@@ -43,8 +43,7 @@ function handleSubmit(e){
    }
     
     text.innerHTML = `
-                 <h3> Felicitaciones!! mensaje enviado! </h3> 
-                 <p>  Seguro no nos comunicamos con usted </p> 
+                 <h3> &#10024;  Felicitaciones!! mensaje enviado! &#10024; </h3> 
                       Sus datos: <br>
                       Nombre: ${values.nombre}. <br>
                       Apellido: ${values.apellido} <br>
@@ -65,7 +64,7 @@ function handleSubmit(e){
 //=================== FUNCIONES SECUNDARIAS =====================//
 
 
-//Función para apagar el overlay -- fuente w3school  
+//Función para apagar el overlay -- fuente w3school --
 
 function off(){
      document.getElementById("overlay").style.display = "none"

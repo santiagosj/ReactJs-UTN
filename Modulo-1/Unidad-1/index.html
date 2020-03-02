@@ -9,6 +9,8 @@
 </head>
 <body>
     <main class="container">
+      
+        <div id="overlay" onclick="off()"></div>
 
         <section id="box-1">
 
@@ -20,23 +22,23 @@
               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus vero sint, eum itaque, placeat nobis neque ipsum aspernatur aliquam culpa veniam. Maxime totam tenetur ad suscipit. Distinctio blanditiis fugit eius.</p>
         </section>
         <section id="box-2">
-            <form action="">
-                  <h3>Ingrese sus datos y nos comunicaremos con usted...o no...</h3>
+            <form action="" name="contactForm" onsubmit="handleSubmit(event)">
+                  <h3>Ingrese sus datos y nos comunicaremos con usted... o no...</h3>
                   <div class="user-inputs">
                        <label for="nombre">Nombre</label><br>
-                       <input type="text" name="nombre" placeholder="ingrese su nombre"><br>
+                       <input type="text" id="nombre" name="nombre" placeholder="ingrese su nombre"  ><br>
 
                        <label for="apellido">Apellido</label><br>
-                       <input type="text" name="apellido" placeholder="ingrese su apellido"><br>
+                       <input type="text" id="apellido" name="apellido" placeholder="ingrese su apellido"  ><br>
                      
                        <label for="dni">D.N.I</label><br>
-                       <input type="text" name="dni" placeholder="ingrese su DNI"><br>
+                       <input type="number" id="dni" name="dni" placeholder="ingrese su DNI" ><br>
 
                        <label for="email">Email</label><br>
-                       <input type="email" name="email" placeholder="ingrese su email"><br>
+                       <input type="email" id="email" name="email" placeholder="ingrese su email"  ><br>
 
                        <label for="telefono">Teléfono</label><br>
-                       <input type="text" name="telefono" placeholder="ingrese su teléfono"><br>
+                       <input type="number" id="telefono" name="telefono" placeholder="ingrese su teléfono"  ><br>
 
                   </div>
                   <div class="plan-seguro">
@@ -127,7 +129,7 @@
                     </fieldset>
 
                   </div>                  
-               <input type="submit" value="Enviar">
+               <input type="submit" value="Enviar" id="submitButton">
             </form>
         </section>
     </main>

@@ -1,9 +1,18 @@
+body{
+  margin: 0;
+}
+h1{
+  font-size: 3em;
+}
 .container{
   display: flex;
   flex-direction: column;
 }
 .slogan{
     text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    letter-spacing: 4px;
 }
 #box-1, #box-2{
     width: 80%;
@@ -12,6 +21,9 @@
 #box-1 p{
   max-width: 500px;
   margin: auto;
+  line-height: 2;
+  letter-spacing: 2px;
+  font-size: 1.2em;
 }
 form{
     text-align: center;
@@ -53,11 +65,18 @@ fieldset{
 
 legend{
     margin: auto;
+    letter-spacing: 2px;
+  font-size: 1.2em;
 }
-.plan{
+fieldset .plan{
     margin: 20px auto;
     border: 1px solid black;
     padding: 30px;
+    transition: .3s ease-in-out;
+}
+fieldset .plan:hover{
+  box-shadow: 1px 1px 14px 0px black;
+  transition: .3s ease-in-out;
 }
 .plan ul {
     list-style: none;
@@ -172,6 +191,7 @@ input[type="checkbox" i]{
         
         #text{
           position: absolute;
+          background-color: rgba(0, 0, 0, 0.554);
           top: 50%;
           left: 50%;
           font-size: 25px;

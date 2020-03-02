@@ -1,5 +1,13 @@
 console.log('documento cargado')
 
+// variables globales 
+
+var text; 
+
+var overlay;
+
+//=============== FUNCIÓN PRINCIPAL =======================//
+
 function handleSubmit(e){
 
     e.preventDefault()
@@ -9,11 +17,9 @@ function handleSubmit(e){
     var inputs = Object.values(form).filter(item => item['name']) 
     
     var values = {}
-
-    var text = document.createElement('div')
-
-    var overlay = document.getElementById('overlay')
    
+    overlay = document.getElementById('overlay') 
+
    for(input of inputs){
 
        if(input.type == 'checkbox' && input.checked){
@@ -28,12 +34,25 @@ function handleSubmit(e){
             values.telefono = input.value
        }else if(input.name=='email'){
             values.email = input.value
-       }  
+       }
+        
    }
+    
+    text = document.createElement('div')
 
     text.setAttribute('id','text')
 
-    text.innerText = `Gracias por comunicarse con nosotros ${values.nombre} ${values.apellido}, usted eligió el plan: ${values.plan}, seguro no nos comunicaremos con usted para corroborar sus datos si su DNI no es este ${values.dni} y su numero no es el siguiente ${values.telefono}, utilizaremos su email ${values.email}, para enviarle publicidad e información que seguro no necesita.`
+    text.innerHTML = `
+                 <h3> Felicitaciones!! mensaje enviado! </h3> 
+                 <p>  Seguro no nos comunicamos con usted </p> 
+                      Sus datos: <br>
+                      Nombre: ${values.nombre}. <br>
+                      Apellido: ${values.apellido} <br>
+                      DNI: ${values.dni} <br>
+                      Email: ${values.email} <br>
+                      Teléfono: ${values.telefono} <br>
+                      Plan de seguro: ${values.plan} <br>
+                      `
 
     overlay.appendChild(text)
 
@@ -42,10 +61,14 @@ function handleSubmit(e){
     console.log(values)
 
     form.reset()
+
 }
+
+//=================== FUNCIONES SECUNDARIAS =====================//
 
 function off(){
      document.getElementById("overlay").style.display = "none"
+     overlay.removeChild(text)
 }
 
 function checkearUno(checkbox) {

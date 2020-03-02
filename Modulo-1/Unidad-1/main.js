@@ -1,15 +1,15 @@
 console.log('documento cargado')
 
-// variables globales 
+// variables globales // si bien las variables globales son una mala idea, en este caso las uso para lograr el funcionamiento del mockup, utilizando el scope global.
 
 var text; 
 
 var overlay;
 
-//=============== FUNCIÓN PRINCIPAL =======================//
+//=============== FUNCIÓN PRINCIPAL ================//
 
 function handleSubmit(e){
-
+ 
     e.preventDefault()
 
     var form = document.forms['contactForm']
@@ -19,6 +19,10 @@ function handleSubmit(e){
     var values = {}
    
     overlay = document.getElementById('overlay') 
+
+    text = document.createElement('div')
+
+    text.setAttribute('id','text')
 
    for(input of inputs){
 
@@ -38,10 +42,6 @@ function handleSubmit(e){
         
    }
     
-    text = document.createElement('div')
-
-    text.setAttribute('id','text')
-
     text.innerHTML = `
                  <h3> Felicitaciones!! mensaje enviado! </h3> 
                  <p>  Seguro no nos comunicamos con usted </p> 
@@ -53,12 +53,10 @@ function handleSubmit(e){
                       Teléfono: ${values.telefono} <br>
                       Plan de seguro: ${values.plan} <br>
                       `
-
+    
     overlay.appendChild(text)
 
     document.getElementById("overlay").style.display = "block"
-
-    console.log(values)
 
     form.reset()
 
@@ -66,10 +64,16 @@ function handleSubmit(e){
 
 //=================== FUNCIONES SECUNDARIAS =====================//
 
+
+//Función para apagar el overlay -- fuente w3school  
+
 function off(){
      document.getElementById("overlay").style.display = "none"
      overlay.removeChild(text)
 }
+
+
+//Esta función permite utilizar inputs de tipo checkbox como si furan de tipo radio
 
 function checkearUno(checkbox) {
 
@@ -82,3 +86,4 @@ function checkearUno(checkbox) {
     })
     
 }
+

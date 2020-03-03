@@ -36,7 +36,7 @@ function handleSubmit(e){
             values.dni = input.value
        }else if(input.name == 'telefono' && input.type == 'number'){
             values.telefono = input.value
-       }else if(input.name=='email'){
+       }else if(input.name == 'email'){
             values.email = input.value
        }
         

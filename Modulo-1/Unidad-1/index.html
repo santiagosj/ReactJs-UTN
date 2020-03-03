@@ -12,34 +12,84 @@
       
         <div id="overlay" onclick="off()"></div>
         <header class="slogan">
+          <nav>
+            <span><a href="#equipo"> Nosotros </a></span>
+            <span> <a href="#contacto"> Contacto </a></span>
+             
+          </nav>
           <h1>Seguro No Pagamos Cooperativa</h1>
           <span>- su compañía de seguro -</span>    
       </header>
         <section id="box-1">
-
-            
               <hr>
                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus vero sint, eum itaque, placeat nobis neque ipsum aspernatur aliquam culpa veniam. Maxime totam tenetur ad suscipit. Distinctio blanditiis fugit eius.</p>
               <hr>
         </section>
+
+         <section>
+
+          <h2 id="equipo">Nuestro Equipo</h2><br>
+
+          <div class="row">
+            <div class="column">
+              <div class="card">
+                <div class="img aquiles" style="width:100%"></div>
+                <div class="container">
+                  <h2>Aquiles Bailoyo</h2>
+                  <p class="title">CEO & Fundador</p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum deleniti ratione assumenda nisi consequatur facilis molestias aliquam ad quam at cupiditate fugiat sit.</p>
+                  <p>example@example.com</p>
+                  
+                </div>
+              </div>
+            </div>
+          
+            <div class="column">
+              <div class="card">
+                <div class="img lola" style="width:100%"></div>
+                <div class="container">
+                  <h2>Lola Mento</h2>
+                  <p class="title">Directora de ventas</p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum deleniti ratione assumenda nisi consequatur facilis molestias aliquam ad quam at cupiditate fugiat sit.</p>
+                  <p>example@example.com</p>
+                  
+                </div>
+              </div>
+            </div>
+            
+            <div class="column">
+              <div class="card">
+                <div class="img esteban" style="width:100%"></div>
+                <div class="container">
+                  <h2>Estaban Quito</h2>
+                  <p class="title">Analista de seguros</p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum deleniti ratione assumenda nisi consequatur facilis molestias aliquam ad quam at cupiditate fugiat sit.</p>
+                  <p>example@example.com</p>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+         </section>
+
         <section id="box-2">
-            <form action="" name="contactForm" onsubmit="handleSubmit(event)">
-                  <h3>Ingrese sus datos y nos comunicaremos con usted</h3>
+            <form action="" name="contactForm" onsubmit="handleSubmit(event)" >
+                  <h3 id="contacto">Ingrese sus datos y nos comunicaremos con usted</h3>
                   <div class="user-inputs">
                        <label for="nombre">Nombre</label><br>
-                       <input type="text" id="nombre" name="nombre" placeholder="ingrese su nombre"  ><br>
+                       <input type="text" id="nombre" name="nombre" placeholder="ingrese su nombre" required ><br>
 
                        <label for="apellido">Apellido</label><br>
-                       <input type="text" id="apellido" name="apellido" placeholder="ingrese su apellido"  ><br>
+                       <input type="text" id="apellido" name="apellido" placeholder="ingrese su apellido" required ><br>
                      
                        <label for="dni">D.N.I</label><br>
-                       <input type="number" id="dni" name="dni" placeholder="ingrese su DNI" ><br>
+                       <input type="number" id="dni" name="dni" placeholder="ingrese su DNI" required><br>
 
                        <label for="email">Email</label><br>
-                       <input type="email" id="email" name="email" placeholder="ingrese su email"  ><br>
+                       <input type="email" id="email" name="email" placeholder="ingrese su email"  required><br>
 
                        <label for="telefono">Teléfono</label><br>
-                       <input type="number" id="telefono" name="telefono" placeholder="ingrese su teléfono"  ><br>
+                       <input type="number" id="telefono" name="telefono" placeholder="ingrese su teléfono" required ><br>
 
                   </div>
                   <div class="plan-seguro">
@@ -61,7 +111,7 @@
                                     type="checkbox" 
                                     name="plan" 
                                     onclick="checkearUno(this)"
-                                    class="filters-available-size"
+                                    class="input-check"
                                     value="Básico"> 
                                   <span 
                                     class="checkmark"
@@ -70,6 +120,7 @@
                                     </span>
                                </label>
                                <br/>
+                               &#128178; <span>199</span>
                              </div>
                               
                              <div class="plan intermedio">
@@ -86,7 +137,7 @@
                                    type="checkbox" 
                                    name="plan" 
                                    onclick="checkearUno(this)"
-                                   class="filters-available-size"
+                                   class="input-check"
                                    value="Intermedio">
                                  <span 
                                    class="checkmark"
@@ -96,6 +147,7 @@
                                  </span>
                             </label>
                                 <br/>
+                                &#128178; <span>260</span>
                              </div>
                               
                              <div class="plan premium"> 
@@ -112,7 +164,7 @@
                                     type="checkbox" 
                                     name="plan" 
                                     onclick="checkearUno(this)"
-                                    class="filters-available-size" 
+                                    class="input-check" 
                                     value="Premium"
                                   >
                                   <span 
@@ -121,8 +173,8 @@
                                   >
                                     Premium
                                  </span>           
-                                </label>
-                              
+                                </label> <br>
+                                &#128178; <span>350</span>
                              </div>
                         </div>
                            
@@ -137,7 +189,7 @@
           
         </section>
         <footer> 
-            <span> Seguro No pagamos Cooperativa <br> &#128073; <a href="https://github.com/santiagosj/ReactJs-UTN/tree/master/Modulo-1/Unidad-1" target="_blank">Código</a> </span> 
+            <span> Seguro No pagamos Cooperativa | 2020 <br> &#128073; <a href="https://github.com/santiagosj/ReactJs-UTN/tree/master/Modulo-1/Unidad-1" target="_blank" style="margin: 0;">Código</a> </span> 
         </footer>
     </main>
 </body>

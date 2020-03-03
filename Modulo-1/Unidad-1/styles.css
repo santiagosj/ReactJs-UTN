@@ -164,12 +164,13 @@ legend{
 }
 fieldset .plan{
     margin: 20px auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     border: 1px solid black;
     padding: 30px;
     transition: .3s ease-in-out;
 }
 fieldset .plan:hover{
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);;
+  box-shadow: 0 1px 10px 1px rgb(0, 0, 0);
   transition: .3s ease-in-out;
 }
 .plan ul {

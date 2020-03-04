@@ -1,0 +1,68 @@
+.keys{
+    display: grid;
+}
+
+.key--operator, .key--equal{
+    background: black;
+    color: red;
+    height: 36px;
+    width: 22%;
+    font-size:18px;
+}
+
+
+
+
+/*.jumbotron {
+    font-family: 'Share Tech Mono';
+  }
+  
+  #res {
+    background: black;
+    border: solid, black;
+    height: 40px;
+    font-size: 20px;
+    color: limegreen;
+    text-align: right;
+  }
+  
+  .btn {
+    font-family: 'Share Tech Mono';
+  }
+  
+  #btns {
+    width: 90%;
+    text-align: center; 
+    width: 22%;
+    height: 36px;
+    font-size: 18px;
+  }
+  
+  .upper {
+    display: inline;
+    position: top;
+  }
+  
+  .lgreen {
+    background: lightgreen;
+    color: brown;
+    display: inline-block;
+    width: 22%;
+    height: 36px;
+    font-size: 18px;
+  }
+  
+  .dgreen {
+    background: darkgreen;
+    color: white;
+    display: inline-block;
+    width: 22%;
+    height: 36px;
+    font-size: 18px;
+  }
+  
+  .lower {
+    display: inline;
+    position: bottom;
+  }*/
+  

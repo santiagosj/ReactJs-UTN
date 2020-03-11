@@ -1,68 +1,48 @@
+body{
+    height: -webkit-fill-available;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #a5a5a5;
+    font-family: 'Share Tech Mono';
+}
+
+.calculadora{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 300px;
+}
+
 .keys{
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .key--operator, .key--equal{
     background: black;
     color: red;
-    height: 36px;
-    width: 22%;
-    font-size:18px;
+}
+.screen, .count{
+  background: black;
+  border: solid, black;
+  height: 31px;
+  font-size: 20px;
+  color: limegreen;
+  text-align: right;
 }
 
+button,div {
+  font-family: 'Share Tech Mono';
+}
 
-
-
-/*.jumbotron {
-    font-family: 'Share Tech Mono';
-  }
-  
-  #res {
-    background: black;
-    border: solid, black;
-    height: 40px;
-    font-size: 20px;
-    color: limegreen;
-    text-align: right;
-  }
-  
-  .btn {
-    font-family: 'Share Tech Mono';
-  }
-  
-  #btns {
+button{
     width: 90%;
     text-align: center; 
-    width: 22%;
+    width: 25%;
     height: 36px;
     font-size: 18px;
-  }
-  
-  .upper {
-    display: inline;
-    position: top;
-  }
-  
-  .lgreen {
-    background: lightgreen;
-    color: brown;
-    display: inline-block;
-    width: 22%;
-    height: 36px;
-    font-size: 18px;
-  }
-  
-  .dgreen {
-    background: darkgreen;
-    color: white;
-    display: inline-block;
-    width: 22%;
-    height: 36px;
-    font-size: 18px;
-  }
-  
-  .lower {
-    display: inline;
-    position: bottom;
-  }*/
+}
+
   

@@ -11,16 +11,47 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <script src="./main.js"></script>
+    
     <title>TP - Modulo-1/Unidad-2</title>
 </head>
 <body>
-    <div class="calculadora">
-          
-       <div class="screen"></div>
-       <div class="keys">
-         
-       </div>
-    </div>
+    <h1>Calculadora</h1>
+  <div class="calculadora">
+
+    <div class="screen">0</div>
+    
+    <div class="keys">
+
+      <button class="key--operator" data-action="sumar">+</button>
+      <button class="key--operator" data-action="restar">-</button>
+      <button class="key--operator" data-action="multiplicar">&times;</button>
+      <button class="key--operator" data-action="dividir">÷</button>
+
+      <button>7</button>
+      <button>8</button>
+      <button>9</button>
+      <button>4</button>
+      <button>5</button>
+      <button>6</button>
+      <button>1</button>
+      <button>2</button>
+      <button>3</button>
+      <button>0</button>
+
+      <button data-action="decimal">.</button>
+      <button data-action="borrar">AC</button>
+      <button class="key--equal" data-action="calcular">=</button> <br>
+      
+    </div>   
+
+    <form class="formulario">
+      <label>Valor 1:</label>
+      <input type="text" name="num1" >
+      <label>Valor 2:</label>
+      <input type="text" name="num2" >
+   </form>
+   
+  </div>
+    <script src="./main.js"></script>
 </body>
 </html>

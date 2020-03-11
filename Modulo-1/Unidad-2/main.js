@@ -99,7 +99,7 @@ const createResultString = (key, numeroEnPantalla, state) => {
          previousKeyType === 'calcular') {  
             return parseInt(keyValue) || 0 
        } else {
-            return numeroEnPantalla + parseInt(keyValue)
+            return numeroEnPantalla + parseInt(keyValue) 
       } 
 
   }

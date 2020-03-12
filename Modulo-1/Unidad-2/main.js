@@ -63,7 +63,7 @@ const getKeyType = key => {
  * @param {*} numeroEnPantalla 
  * @param {*} state 
  * 
- * Recibe 3 parametros, el primero, key es la tecla presionada, dicho valor es almacenado
+ * Recibe 3 parametros, el primero, key representa el tipo de tecla presionada, dicho valor es almacenado
  * en la variable KeyContent y KeyType. El atributo numeroEnPantalla es utilizado como 
  * condicional y valor de retorno cuando es llamada la función. El atributo state
  * almacena 4 valores utilizados para definir el resultado devuelt segun los valores que toman los
@@ -164,6 +164,7 @@ const updateCalculatorState = (key, calculadora, valorCalculado, numeroEnPantall
 
   if (keyType === 'operador') {
     calculadora.dataset.operador = key.dataset.action
+    document.forms[0][1].disabled = false
     calculadora.dataset.primerValor = primerValor && operador && previousKeyType !== 'operador' && previousKeyType !== 'calcular'
       ? valorCalculado : numeroEnPantalla
   }
@@ -171,14 +172,20 @@ const updateCalculatorState = (key, calculadora, valorCalculado, numeroEnPantall
   if (keyType === 'calcular') {
     calculadora.dataset.segundoValor = primerValor && previousKeyType === 'calcular'
       ? segundoValor
-      : numeroEnPantalla
+      : numeroEnPantalla;
+      //cambios hechos después del tiempo de entrega
+      document.forms[0].reset()
+      document.forms[0][1].disabled = true
   }
 
-  if (keyType === 'borrar' && key.textContent === 'AC') {
+  if (keyType === 'borrar' || key.textContent === 'AC') {
         calculadora.dataset.primerValor = ''
         calculadora.dataset.segundoValor = ''
         calculadora.dataset.operador = ''
         calculadora.dataset.previousKeyType = ''
+        //cambios hechos después del tiempo de entrega
+        document.forms[0].reset()
+        document.forms[0][1].disabled = true
    }
 }
 
@@ -218,6 +225,8 @@ const screen = calculadora.querySelector('.screen')
 const keys = calculadora.querySelector('.keys')
 const form = calculadora.querySelector('.formulario')
 
+document.forms[0][1].disabled = true
+
 keys.addEventListener('click', e => {
   if (!e.target.matches('button')) return
 
@@ -236,7 +245,7 @@ keys.addEventListener('click', e => {
   
 })
 
-form.addEventListener('change',e=>{
+form.addEventListener('change', e =>{
   if (!e.target.matches('input')) return
     const key = e.target
     const numeroEnPantalla = screen.textContent

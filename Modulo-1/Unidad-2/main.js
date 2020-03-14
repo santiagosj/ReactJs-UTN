@@ -218,7 +218,7 @@ const updateVisualState = (key, calculadora) => {
   }
 }
 
-//=====================================================================================
+//====================================== MAIN PROCESS ===============================================
 
 const calculadora = document.querySelector('.calculadora')
 const screen = calculadora.querySelector('.screen')

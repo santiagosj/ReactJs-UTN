@@ -1,11 +1,10 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.scss';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-        
+        Hola unidad-4 branch
     </div>
   );
 }

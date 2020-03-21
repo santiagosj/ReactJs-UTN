@@ -1,0 +1,26 @@
+{
+    "profiles":[
+      {
+        "id": 1,
+        "title": "Rick Sanchez",
+        "description": "Ceintífico, shy pooper",
+        "frases": ["Ser amable es algo que hace la gente bgraa.. estúpida para mejorar sus opciones...", "...el punto de tener mascotas es la sensación de sentir superioridad como especie..."],
+        "teléfono": 5551320657,
+        "email": "ricksanches@gmail.com",
+        "dirección": "Calle 123 ",
+        "ciudad": "Adult Swim city",
+        "imagen": "rick.jpg"
+        },
+      {
+        "id": 2,
+        "title": "Morty Smith",
+        "description": "Estudiante, ayudante de Rick",
+        "frases": ["No lo sé Rick..", "Jessicaa 🧡🧡🧡🧡"],
+        "teléfono": 51321657893,
+        "email": "mortysmith@gmail.com",
+        "dirección": "Calle 123 ",
+        "ciudad": "Adult Swim city",
+        "imagen": "morty.png"
+      }
+    ]
+}

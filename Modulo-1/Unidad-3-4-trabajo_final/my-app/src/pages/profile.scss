@@ -1,0 +1,68 @@
+.profile--content{
+    
+
+    label{
+        width: 88%;
+        position: fixed;
+        top:0;
+        right:0;
+        background: black;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        height:100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+      input{
+          display: none;
+      }  
+
+        ul {
+            .profile--image{
+                width: 150px;
+                border-radius: 50%;
+                overflow: hidden;
+                height: 150px;
+                background: #e1e1e1;
+        
+                img{
+                    max-width: 151px;
+                }
+        
+             }
+            p{
+                font-family: monospace;
+                text-align: left;
+                letter-spacing: 3px;
+            }
+            &::after{
+                content: 'X';
+                font-size: 50px;
+                color: white;
+                position: absolute;
+                top: 21px;
+                left: 40px;
+                transition: .3s ease-in-out;
+              
+            }
+            .frases{
+                padding: 10px;
+                border:1px solid white
+            }
+            
+        }
+    }
+
+}
+
+@media screen and (min-width:600px){
+    .profile--content{
+        label{
+            width: 50%;
+        }
+    }
+    
+}

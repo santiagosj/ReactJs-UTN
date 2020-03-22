@@ -25,3 +25,7 @@ Se prodra entregar esta unidad:
 Desde: 12/03/2020 23:55 hs
 Hasta: 25/03/2020 23:55 hs
 
+# setup
+
+1-cd my-app/server npm run server
+2-en otra terminal en el directorio root npm start

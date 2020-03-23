@@ -6,6 +6,8 @@ import './App.scss';
 const App = () => {
   return (
     <div className="App">
+        <h1>React forms</h1>
+        <span>Trabajo final Modulo-1</span>
         <Form />
     </div>
   );

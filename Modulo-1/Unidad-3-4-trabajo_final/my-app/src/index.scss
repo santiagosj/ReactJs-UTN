@@ -2,7 +2,10 @@
     box-sizing: border-box;
 }
 html{
-    background-color: #8080805c;
+    background-color: #acacac5c;
+}
+html::-webkit-scrollbar{
+    display: none;
 }
 body{
     overflow-x: hidden;

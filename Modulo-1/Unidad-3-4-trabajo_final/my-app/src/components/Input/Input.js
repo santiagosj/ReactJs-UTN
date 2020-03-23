@@ -23,10 +23,10 @@ const Input = ({
                             placeholder={inputPlaceholder}
                             minLength={inputMinLength}
                             maxLength={inputMaxLength}
-                       />
-            </label>
-           
+                        />
+            </label>   
     )
 }
 
 export default Input
+

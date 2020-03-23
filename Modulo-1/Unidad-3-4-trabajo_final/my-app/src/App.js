@@ -1,13 +1,11 @@
 import React from 'react';
 import Form from './components/Form/Form'
-
-import './App.scss';
+import Header from './components/Header/Header'
 
 const App = () => {
   return (
     <div className="App">
-        <h1>React forms</h1>
-        <span>Trabajo final Modulo-1</span>
+        <Header title={'React Forms'} subTitle={'Trabajo final Modulo 1'}/>
         <Form />
     </div>
   );

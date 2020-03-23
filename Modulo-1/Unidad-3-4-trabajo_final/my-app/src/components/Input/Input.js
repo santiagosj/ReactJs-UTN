@@ -6,7 +6,6 @@ const Input = ({
     inputName,
     inputValue,
     inputPlaceholder,
-    inputPattern,
     inputMinLength,
     inputMaxLength,
     labelName
@@ -22,7 +21,6 @@ const Input = ({
                             name={inputName} 
                             value={inputValue} 
                             placeholder={inputPlaceholder}
-                            pattern={inputPattern}
                             minLength={inputMinLength}
                             maxLength={inputMaxLength}
                        />

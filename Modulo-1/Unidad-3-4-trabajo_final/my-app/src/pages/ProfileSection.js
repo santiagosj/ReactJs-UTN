@@ -1,4 +1,4 @@
-import React,{useEffect,useState} from 'react'
+import React,{useState} from 'react'
 import Image from '../components/Image/Image'
 import './ProfileSection.scss'
 
@@ -11,7 +11,6 @@ import {
 
 import Profile from './profile'
 
-
 const ProfileSection = ({profiles}) => {
 
     const [checked, setChecked] = useState(false);
@@ -20,7 +19,7 @@ const ProfileSection = ({profiles}) => {
 
                <Router>
        
-                <div >
+                <div>
                    
                     <h2>Perfiles</h2>    
 
@@ -28,7 +27,7 @@ const ProfileSection = ({profiles}) => {
  
                     {profiles.map(profile =>(
 
-                        <div key={profile.id} >
+                        <div key={profile.id}>
 
                           {profile && (
                               <div onClick={() => setChecked(!checked)}>
@@ -39,8 +38,8 @@ const ProfileSection = ({profiles}) => {
 
                                             <div className='profile--image'>
                                                     <Image 
-                                                    imgSrc={require(`../assets/${profile.imagen}`)}
-                                                    alt={profile.title}
+                                                      imgSrc={require(`../assets/${profile.imagen}`)}
+                                                      alt={profile.title}
                                                     />
                                                 </div>
                                                     
@@ -57,12 +56,12 @@ const ProfileSection = ({profiles}) => {
                                  
                                 <Switch>
                                    <Route exact path={`/profile/${profile.title}`}>
-                                      <Profile 
-                                         profile={profile} 
-                                         checked={checked} 
-                                         handleToggle={() => setChecked(!checked)}
-                                         onDisplay={'none'}
-                                      />
+                                       <Profile 
+                                             profile={profile} 
+                                             checked={checked} 
+                                             handleToggle={() => setChecked(!checked)}
+                                             onDisplay={'none'}
+                                       />
                                    </Route>
                                 </Switch>
                       

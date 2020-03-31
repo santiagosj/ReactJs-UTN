@@ -1,0 +1,21 @@
+.follow--conainer{
+    display: block;
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    button{
+        padding: 10px;
+        background: transparent;
+        margin: 10px;
+        border: 1px solid;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    span{
+        font-size: 12px;
+        display: block;
+        font-family: monospace;
+    }
+
+}

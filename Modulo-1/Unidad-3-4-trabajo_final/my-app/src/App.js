@@ -1,13 +1,19 @@
 import React from 'react';
 import AppHolder from '../src/components/AppHolder/AppHolder'
+import {HashRouter} from 'react-router-dom'
 
+/**
+ *    
+ *     
+ * 
+ */
 const App = () => {
 
   
   return (
-    <div className="App">
-        <AppHolder/>
-    </div>
+    <HashRouter className="App">
+        <AppHolder />
+    </HashRouter>
   );
 }
 

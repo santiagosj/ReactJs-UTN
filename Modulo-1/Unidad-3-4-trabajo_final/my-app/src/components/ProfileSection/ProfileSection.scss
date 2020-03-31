@@ -1,12 +1,19 @@
 .profiles--container{
         display: flex;
-       justify-content: space-evenly;
+        justify-content: space-evenly;
         align-items: center;
         flex-wrap: wrap;
         margin: 60px 0;
+        label{
+            input{display: none;}
+        }
         a{
             text-decoration:none;
             color:black;
+        }
+        .profile--container{
+            margin-bottom: 10px;
+            height: fit-content;
         }
      
 .profile--box{

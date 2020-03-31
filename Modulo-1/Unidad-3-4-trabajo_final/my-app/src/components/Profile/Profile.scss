@@ -1,8 +1,7 @@
 .profile--content{
     
-
-    label{
-        width: 88%;
+    .menu-wrap{ 
+        width: 90%;
         position: fixed;
         top:0;
         right:0;
@@ -15,17 +14,19 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        z-index: 200;
 
       input{
           display: none;
       }  
 
-        ul {
+        div {
             .profile--image{
                 width: 150px;
                 border-radius: 50%;
                 overflow: hidden;
                 height: 150px;
+                margin: auto;
                 background: #e1e1e1;
         
                 img{
@@ -33,6 +34,7 @@
                 }
         
              }
+             
             p{
                 font-family: monospace;
                 text-align: left;
@@ -60,7 +62,7 @@
 
 @media screen and (min-width:600px){
     .profile--content{
-        label{
+         .menu-wrap{
             width: 50%;
         }
     }

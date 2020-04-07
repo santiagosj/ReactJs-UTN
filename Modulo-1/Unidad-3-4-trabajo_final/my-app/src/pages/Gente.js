@@ -1,8 +1,8 @@
 import React,{ useState,useEffect } from 'react';
 import ProfileSection from '../components/ProfileSection/ProfileSection'
-//import axios from 'axios';
+import axios from 'axios';
 
-const PERFILES = {
+/*const PERFILES = {
 
    profiles:[
       {
@@ -78,12 +78,11 @@ const PERFILES = {
          imagen: "popo.jpg"
       }
     ]
- }
+ }*/
 
 
 const Gente = () => {
 
-    /**
        const [data, setData] = useState({ profiles: [] });
 
          useEffect(() => {
@@ -95,8 +94,8 @@ const Gente = () => {
             }
             getProfiles()
          }, []);
-     */
-    const [data, setProfiles] = useState({ profiles:[] })
+     
+   /* const [data, setProfiles] = useState({ profiles:[] })
     
   //Función ciclo de vida 
 
@@ -107,7 +106,7 @@ const Gente = () => {
        }
        getProfile()
        
-   },[data])
+   },[data])*/
 
     return (
         <div>
